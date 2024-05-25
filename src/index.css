@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  width: 1440px;
+  margin: auto;
+}
+.btn {
+  border-radius: 12px;
+  background-color: transparent;
+  color: #fff;
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  padding: 16px 40px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 22px;
+  display: inline-block;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #fff;
+  color: #006944;
+  background-color: #fff;
+  border: 2px solid #006944;
+}

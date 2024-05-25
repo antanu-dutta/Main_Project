@@ -1,0 +1,33 @@
+.icon-strip {
+  padding: 10px 0;
+  background-color: #006944;
+  margin-top: -1px;
+}
+.icon-strip_container {
+  width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon-strip_item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.icon-strip_item img {
+  width: 38px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.icon-strip_item-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
