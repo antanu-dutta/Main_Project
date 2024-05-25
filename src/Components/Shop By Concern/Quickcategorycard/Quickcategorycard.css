@@ -1,0 +1,21 @@
+.quick_category_image img {
+  border-radius: 100px;
+  border: 2px solid #bcd871;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 0,
+      rgba(0, 0, 0, 0.05) 100%
+    ),
+    url(<path-to-image>),
+    #d3d3d3 -47.164px 1.886px / 150.234% 103.653% no-repeat;
+  box-shadow: 0 3.07255px 10.75392px 0 rgba(0, 0, 0, 0.09);
+}
+.quick_category_content p {
+  color: #355d4d;
+  text-align: center;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
