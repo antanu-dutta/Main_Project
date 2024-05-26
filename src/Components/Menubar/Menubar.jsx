@@ -4,6 +4,7 @@ import logo from "../../assets/logo.webp";
 // import Menuitem from "../Menuitem/Menuitem";
 // import { menuItem1, menuItem2, menuItem3 } from "../MenuItems/MenuItems";
 
+
 function Menubar() {
   return (
     <div className="menubar-bg">

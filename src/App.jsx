@@ -1,5 +1,6 @@
 import Ayurvedicremedie from "./Components/Ayurvedic_remedie/Ayurvedicremedie";
 import Header from "./Components/Header/Header";
+import Honeysection from "./Components/Honey Section/Honeysection";
 import Iconstrip from "./Components/Icon Strip/Iconstrip";
 import Shopbyconcern from "./Components/Shop By Concern/Shopbyconcern";
 import Shopbyproducts from "./Components/Shop By Products/Shopbyproducts";
@@ -14,6 +15,7 @@ function App() {
       <Shopbyconcern />
       <Ayurvedicremedie />
       <Shopbyproducts />
+      <Honeysection />
     </>
   );
 }
