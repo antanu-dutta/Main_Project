@@ -21,7 +21,7 @@ import pd10hover from "../../../assets/Honey Product Image/10.hover.jpg";
 import pd11 from "../../../assets/Honey Product Image/11.jpg";
 import pd11hover from "../../../assets/Honey Product Image/11.hover.jpg";
 
-export const honeyProduct = [
+export const Honey = [
   {
     path: pd1,
     hoverPath: pd1hover,

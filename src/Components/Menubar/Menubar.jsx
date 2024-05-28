@@ -4,7 +4,6 @@ import logo from "../../assets/logo.webp";
 // import Menuitem from "../Menuitem/Menuitem";
 // import { menuItem1, menuItem2, menuItem3 } from "../MenuItems/MenuItems";
 
-
 function Menubar() {
   return (
     <div className="menubar-bg">
@@ -15,17 +14,17 @@ function Menubar() {
             <ul>
               <li>
                 <a href="#">
-                  Shop by Concern <span class="fa fa-angle-down"></span>
+                  Shop by Concern <span className="fa fa-angle-down"></span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Shop by Products <span class="fa fa-angle-down"></span>
+                  Shop by Products <span className="fa fa-angle-down"></span>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Business with us <span class="fa fa-angle-down"></span>
+                  Business with us <span className="fa fa-angle-down"></span>
                 </a>
               </li>
               <li>

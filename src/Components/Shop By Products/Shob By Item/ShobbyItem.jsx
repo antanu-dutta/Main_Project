@@ -5,8 +5,8 @@ import { productItem } from "../Shobbyproduct";
 function ShobbyItem() {
   return (
     <>
-      {productItem.map((item) => (
-        <a href="" className=" w-[16%] p-4 transition-all">
+      {productItem.map((item, index) => (
+        <a href="" key={index} className=" w-[16%] p-4 transition-all">
           <img
             src={item.path}
             alt=""

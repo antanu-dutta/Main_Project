@@ -1,14 +1,13 @@
-import React from "react";
-import "./ProductItemdesign.css";
-import { honeyProduct } from "../Honey Section/Honey Section Products/HoneySectionProduct";
+import React, { useContext } from "react";
+import "./ProductItem.css";
 import heart_icon from "../../assets/SVG/heart.svg";
 
-function ProductItemdesign() {
+function ProductItem({ products }) {
   return (
     <>
-      {honeyProduct.map((item) => {
+      {products.map((item, index) => {
         return (
-          <div className="product">
+          <div key={index} className="product">
             <div className="product_photo mb-6">
               <div className="fav flex justify-between mb-5">
                 <span>Bestseller</span>
@@ -39,4 +38,4 @@ function ProductItemdesign() {
   );
 }
 
-export default ProductItemdesign;
+export default ProductItem;

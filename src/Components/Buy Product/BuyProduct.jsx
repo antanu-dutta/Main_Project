@@ -1,18 +1,17 @@
-import React from "react";
-import ProductItemdesign from "../Product Item Design/ProductItemdesign";
-import "./Honeysection.css";
-import HoneySlider from "./HoneySection Slider/HoneySlider";
+import React, { useContext } from "react";
+import "./BuyProduct.css";
+import ProductItem from "../Product Item/ProductItem";
 
-function Honeysection() {
+function BuyProduct({ title, subTitle, products }) {
   return (
     <div className="collecion_products">
       <div className="container_custom flex align-items-center py-[100px] bg-[#faf9f4]">
         <div className="flex flex-col items-start gap-9 w-[35%] px-[5%]">
           <h1 className=" text-[#855245] text-[40px] font-medium leading-10 m-0">
-            Pure Honey
+            {title}
           </h1>
           <p className="text-[#000] text-sm font-normal w-[70%] leading-[22px] mb-4">
-            Be-produced, unprocessed honey from a farm, pure and natural
+            {subTitle}
           </p>
           <div className="  flex flex-col gap-10">
             <div className="navigation-btn flex gap-5">
@@ -36,11 +35,11 @@ function Honeysection() {
           </div>
         </div>
         <div className="product-container w-[65%] flex flex-nowrap overflow-x-auto">
-          <HoneySlider />
+          <ProductItem products={products} />;
         </div>
       </div>
     </div>
   );
 }
 
-export default Honeysection;
+export default BuyProduct;
