@@ -1,0 +1,10 @@
+.review_card {
+  width: 25%;
+  /* height: 600px; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.review_card img {
+  width: 100%;
+}

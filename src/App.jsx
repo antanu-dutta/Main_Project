@@ -8,7 +8,11 @@ import Slider from "./Components/Slider/Slider";
 import { Honey } from "./Components/Buy Product/Producs/Honey";
 import { Oil } from "./Components/Buy Product/Producs/Oil";
 import { Ghee } from "./Components/Buy Product/Producs/Ghee";
+import { Juice } from "./Components/Buy Product/Producs/Juice";
 import Context from "./Components/Store/Context";
+import FarmNatural from "./Components/Farm Natural/FarmNatural";
+import Gift from "./Components/Gift/Gift";
+import Review from "./Components/Review/Review";
 
 function App() {
   return (
@@ -39,7 +43,17 @@ function App() {
           subTitle={"Pure, farm-sourced, made through traditional method."}
           products={Ghee}
         />
+        <FarmNatural />
       </Context>
+      <BuyProduct
+        title={"Herbal Juices"}
+        subTitle={
+          "Pure, Organic herbal juices sourced from farm ingredients has no added sugar."
+        }
+        products={Juice}
+      />
+      <Gift />
+      <Review />
     </>
   );
 }

@@ -34,8 +34,8 @@ function BuyProduct({ title, subTitle, products }) {
             </a>
           </div>
         </div>
-        <div className="product-container w-[65%] flex flex-nowrap overflow-x-auto">
-          <ProductItem products={products} />;
+        <div className="product-container w-[65%]">
+          <ProductItem products={products} />
         </div>
       </div>
     </div>
