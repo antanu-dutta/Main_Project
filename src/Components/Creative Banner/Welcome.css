@@ -1,0 +1,119 @@
+.creative_banner {
+  background: #006944;
+  padding: 73px 0;
+  position: relative;
+}
+.creative_banner > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.creative_banner_container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.creative-banner__item_image-wrapper {
+  position: relative;
+  display: block;
+  padding-top: 100%;
+}
+
+.creative-banner__item_image-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.creative-banner__item {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 47%;
+  justify-content: flex-end;
+  padding: 10px;
+  cursor: pointer;
+}
+.creative-banner__item:hover {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+.banner_content {
+  text-align: left;
+}
+
+.banner_content h4 {
+  color: #bac34e !important;
+  text-align: left !important;
+  font-family: jost;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 23.054px;
+  margin-bottom: -6px;
+}
+.creative-banner__item-title {
+  position: static;
+  transform: none;
+  width: 100%;
+}
+.creative-banner__item-description {
+  color: #fff !important;
+  margin-bottom: 27px;
+  font-family: Jost;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 48px;
+  text-align: left;
+  margin-top: 10px;
+}
+.creative_banner_container .creative-banner__item:nth-child(2) {
+  flex-direction: column;
+}
+.creative_banner_container
+  .creative-banner__item:nth-child(2)
+  > .banner_content
+  > .creative-banner__item-description {
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23.976px;
+}
+.creative-banner__item-link {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+.banner_content a {
+  border-radius: 12px;
+  font-family: Jost;
+  margin-right: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: 0.3s linear;
+  margin-top: 7px;
+  padding: 10px 31px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.custom_btnn {
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}
+.failed_btn {
+  border: 1px solid #006944;
+  color: #006944;
+  background: #fff;
+}

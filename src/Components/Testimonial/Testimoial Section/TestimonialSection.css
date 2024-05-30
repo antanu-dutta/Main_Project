@@ -1,0 +1,38 @@
+.testimonial-section {
+  background: #f6f5f0;
+}
+.customer_details span {
+  color: #000;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.heading-review {
+  padding-top: 70px;
+}
+.heading-review h3 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 16px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+}
+.heading-review p {
+  color: #000;
+  text-align: center;
+  font-family: Jost;
+  margin-bottom: 72px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.customer-review-wrap {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

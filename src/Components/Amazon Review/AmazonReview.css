@@ -1,0 +1,30 @@
+.amazon_review-wrap {
+  background: url("../../assets//amazon_review.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 118px 0;
+  background-position: center;
+}
+.amazon_review_content {
+  text-align: left;
+}
+.amazon_review-wrap h2 {
+  color: #006944;
+  text-align: center;
+  font-family: Jost;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 34px;
+}
+.amazon_review-wrap p {
+  color: #006944;
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 34px;
+  line-height: 150%;
+}

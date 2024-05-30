@@ -13,6 +13,10 @@ import Context from "./Components/Store/Context";
 import FarmNatural from "./Components/Farm Natural/FarmNatural";
 import Gift from "./Components/Gift/Gift";
 import Review from "./Components/Review/Review";
+import CreatetiveBanner from "./Components/Creative Banner/Welcome";
+import AmazonReview from "./Components/Amazon Review/AmazonReview";
+import { firstStrip, secondStrip } from "./Components/Icon Strip/IconStrip";
+import TestimonialSection from "./Components/Testimonial/Testimoial Section/TestimonialSection";
 
 function App() {
   return (
@@ -20,7 +24,7 @@ function App() {
       <Context>
         <Header />
         <Slider />
-        <Iconstrip />
+        <Iconstrip strips={firstStrip} />
         <Shopbyconcern />
         <Ayurvedicremedie />
         <Shopbyproducts />
@@ -54,6 +58,10 @@ function App() {
       />
       <Gift />
       <Review />
+      <CreatetiveBanner />
+      <AmazonReview />
+      <Iconstrip strips={secondStrip} />
+      <TestimonialSection />
     </>
   );
 }

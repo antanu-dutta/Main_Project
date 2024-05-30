@@ -32,8 +32,6 @@ function ProductItem({ products }) {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
   };
   return (
     <>

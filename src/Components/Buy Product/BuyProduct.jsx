@@ -6,7 +6,7 @@ function BuyProduct({ title, subTitle, products }) {
   return (
     <div className="collecion_products">
       <div className="container_custom flex align-items-center py-[100px] bg-[#faf9f4]">
-        <div className="flex flex-col items-start gap-9 w-[35%] px-[5%]">
+        <div className="flex flex-col items-start gap-9 w-[33%] px-[5%]">
           <h1 className=" text-[#855245] text-[40px] font-medium leading-10 m-0">
             {title}
           </h1>
