@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* * {
+    position: relative;
+    z-index: -1;
+  } */
+  body {
+    font-family: "Jost";
+  }
+}
 
 .container {
   width: 1440px;
   margin: auto;
 }
-.btn {
+/* .btn {
   border-radius: 12px;
   background-color: transparent;
   color: #fff;
@@ -28,4 +39,4 @@
   color: #006944;
   background-color: #fff;
   border: 2px solid #006944;
-}
+} */

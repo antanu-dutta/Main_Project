@@ -6,7 +6,11 @@ function ShobbyItem() {
   return (
     <>
       {productItem.map((item, index) => (
-        <a href="" key={index} className=" w-[16%] p-4 transition-all">
+        <a
+          href=""
+          key={index}
+          className=" w-[16%] p-4 transition-all hover:scale-110"
+        >
           <img
             src={item.path}
             alt=""

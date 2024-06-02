@@ -7,12 +7,12 @@ import shopbyconcern from "../../assets/shopbyconcernlogo.avif";
 function Shopbyconcern() {
   return (
     <div className="shopify-section">
-      <section className="category_custom_wrap shop_by_concern">
+      <section className="py-20 bg-[#f2f7e3]">
         <div className="container">
-          <div className="quick_category_wrapper top_category_wrap">
+          <div className="">
             <div className="page-width">
               <Shopby img={shopbyconcern} title={"Shob by Concern"} />
-              <div className="quick_category_wrap custom_category_slider">
+              <div className="p-4 flex flex-wrap items-start justify-center">
                 <Quickcategorycard />
               </div>
             </div>

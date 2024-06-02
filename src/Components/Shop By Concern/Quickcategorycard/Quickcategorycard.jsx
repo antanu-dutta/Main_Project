@@ -7,13 +7,19 @@ function Quickcategorycard() {
     <>
       {card.map((item, index) => {
         return (
-          <a href="" key={index}>
-            <div className="quick_category_card">
+          <a href="" key={index} className="w-[12%] p-4">
+            <div>
               <div className="quick_category_image">
-                <img src={item.path} alt="" className="desktop_imgage" />
+                <img
+                  src={item.path}
+                  alt=""
+                  className="rounded-[100px] border-2 border-[#bcd871] bg-gradient"
+                />
               </div>
-              <div className="quick_category_content">
-                <p>{item.title}</p>
+              <div>
+                <p className="text-[#355d4d] text-center text-base font-semibold">
+                  {item.title}
+                </p>
               </div>
             </div>
           </a>

@@ -1,0 +1,8 @@
+#footer-up {
+  background-image: url("../../../assets//Footer Images/Bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: bottom;
+  height: 600px;
+}

@@ -38,13 +38,25 @@ function GiftItems({ GiftItem }) {
     <Slider {...settings}>
       {GiftItem.map((item, index) => {
         return (
-          <div className="item">
+          <div className="item" key={index}>
             {" "}
-            <img src={item.path} alt="gift1" />
-            <h2>{item.title}</h2>
-            <p>{item.subTitle}</p>
-            <span>{item.price}</span>
-            <button>Buy Now</button>{" "}
+            <img
+              src={item.path}
+              alt="gift1"
+              className="absolute top-0 left-0 w-full h-full -z-10"
+            />
+            <h2 className="text-white font-jost text-[42px] not-italic font-medium leading-[48px] tracking-[-1px] text-left">
+              {item.title}
+            </h2>
+            <p className="text-white font-jost text-[20px] not-italic font-light leading-[34px] tracking-[-1px]">
+              {item.subTitle}
+            </p>
+            <span className="text-[#f3b515] font-jost text-[24px] not-italic font-normal leading-[34px] tracking-[-1px]">
+              {item.price}
+            </span>
+            <button className=" px-14 py-4 md:px-[55px] bg-white table rounded-[12px] border border-primary text-primary font-jost text-[14px] not-italic font-semibold mt-[114px] leading-[18px] uppercase transition duration-500 hover:bg-primary hover:text-white">
+              Buy Now
+            </button>{" "}
           </div>
         );
       })}

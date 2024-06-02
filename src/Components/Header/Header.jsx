@@ -5,7 +5,7 @@ import Menubar from "../Menubar/Menubar";
 
 function Header({ children }) {
   return (
-    <header>
+    <header className=" fixed top-0 left-0 z-100 w-full">
       <Offer />
       <Menubar />
     </header>

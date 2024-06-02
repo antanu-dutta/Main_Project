@@ -4,8 +4,8 @@ import "./Offer.css";
 function Offer() {
   const coupon = "NFARM100";
   return (
-    <div className="offer">
-      <div className="content">
+    <div className="bg-primary flex items-center justify-center gap-3 py-2 px-12">
+      <div className=" flex flex-row gap-1 justify-start w-auto">
         <span>
           Get an extra 5% discount on orders over ₹1000, up to ₹100 - Use coupon
         </span>

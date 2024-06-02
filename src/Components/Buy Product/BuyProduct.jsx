@@ -34,7 +34,7 @@ function BuyProduct({ title, subTitle, products }) {
             </a>
           </div>
         </div>
-        <div className="product-container w-[65%]">
+        <div className="product-container w-[65%] relative">
           <ProductItem products={products} />
         </div>
       </div>

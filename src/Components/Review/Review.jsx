@@ -5,12 +5,14 @@ import { videos } from "./Review Video Card/VideoItem";
 
 function Review() {
   return (
-    <div className="review container">
-      <div>
-        <h1 className="customer-love"></h1>
+    <div className="container">
+      <div className="pt-10">
+        <h1 className="text-primary text-4xl font-medium text-center">
+          Customers Love our products
+        </h1>
       </div>
       <div>
-        <div className="review-container flex gap-5">
+        <div className=" flex gap-5">
           <VideoCard videos={videos} />
         </div>
       </div>

@@ -1,18 +1,4 @@
-.offer {
-  background: #006944;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 7px 0;
-  padding: 8px 50px;
-}
-
-.content {
-  display: flex;
-  gap: 3px;
-}
-.content span {
+span {
   color: #fff;
   text-align: center;
   font-family: Jost, sans-serif;

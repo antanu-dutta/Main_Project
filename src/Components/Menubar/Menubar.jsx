@@ -1,77 +1,114 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Menubar.css";
 import logo from "../../assets/logo.webp";
-// import Menuitem from "../Menuitem/Menuitem";
-// import { menuItem1, menuItem2, menuItem3 } from "../MenuItems/MenuItems";
 
 function Menubar() {
+  const [hover, setHover] = useState();
+  const ulItems = [
+    {
+      heading: "Shop by Concern",
+      items: [
+        "Piles Relief",
+        "Healthy Liver",
+        "Magic Man Booster",
+        "Digestive Fitness",
+        "Easing Diabetes",
+        "Hangover Shots",
+        "Revital Body Shots",
+        "Kidney Stone Care",
+        "Glowing Women",
+        "Stress Buster",
+        "Powerful Heart",
+        "Pain Relief",
+        "Win Weight",
+        "Detox Miracle Shot",
+      ],
+    },
+    {
+      heading: "Shop by Products",
+      items: [
+        "Honey",
+        "Cooking oil",
+        "A2 Desi Cow Ghee",
+        "Apple Cidar Vinegar",
+        "Herbal Juices",
+        "Hill Turmeric",
+        "Jaggery Amla candy",
+        "Wellness Oils",
+        "Chyawanprash",
+        "Nuts in Honey",
+        "Stevia",
+        "Shilajit",
+        "Saffron",
+        "Mouth Freshner",
+        "Condiments",
+      ],
+    },
+    {
+      heading: "Business with us",
+      items: [
+        "Private Label",
+        "Bulk purchase (B2B)",
+        "Dealership Enquiry",
+        "Contact Us",
+      ],
+    },
+    {
+      heading: "Consult an Acharya (Doctor)",
+      items: null,
+    },
+    {
+      heading: "Gifting",
+      items: null,
+    },
+  ];
+  const icons = [
+    { class: "fa-regular fa-heart" },
+    { class: "fa-solid fa-magnifying-glass" },
+    { class: "fa-regular fa-user" },
+    { class: "fa-solid fa-cart-shopping" },
+  ];
   return (
-    <div className="menubar-bg">
+    <div className="menubar-bg bg-white  relative">
       <div className="container">
-        <div className="menubar">
-          <div className="menubar-left">
+        <div className="menubar flex justify-between">
+          <div className="menubar-left flex justify-between items-center gap-4">
             <img src={logo} alt="" />
-            <ul>
-              <li>
-                <a href="#">
-                  Shop by Concern <span className="fa fa-angle-down"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Shop by Products <span className="fa fa-angle-down"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Business with us <span className="fa fa-angle-down"></span>
-                </a>
-              </li>
-              <li>
-                <a href="#">Consult an Acharya (Doctor)</a>
-              </li>
-              <li>
-                <a href="#">Gifting</a>
-              </li>
+            <ul className="flex ">
+              {ulItems.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    className={`text-black font-bold px-4 flex items-center gap-3 cursor-pointer ${
+                      item.items ? "border-r border-[#a8b324]" : ""
+                    } `}
+                  >
+                    {item.heading}
+                    {item.items ? (
+                      <i class="fa-solid fa-sort-down -mt-2"></i>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="menubar-right">
             <div className="icons">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/wishlist.svg?v=1695633214"
-                      alt=""
-                    />
-                    <span>0</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/seach.svg?v=1695633116"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://cdn.shopify.com/s/files/1/0781/6711/4011/files/account.svg?v=1695630427"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="https://farmnaturelle.com/cdn/shop/t/64/assets/cart-alt_60x.png?v=6375129234202687581713351401"
-                      alt=""
-                    />
-                    <span>0</span>
-                  </a>
-                </li>
+              <ul className="flex gap-6 items-center justify-center ">
+                {icons.map((item, index) => (
+                  <li className={`${item.class} text-[19px]  relative`}>
+                    {item.class.includes("heart") ||
+                    item.class.includes("shopping") ? (
+                      <div className="w-4 h-4 bg-primary rounded-full absolute -top-1 left-3 flex items-center justify-center text-[8px] text-white">
+                        0
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

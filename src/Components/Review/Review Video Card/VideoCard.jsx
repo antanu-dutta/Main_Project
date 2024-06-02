@@ -6,8 +6,11 @@ function VideoCard({ videos }) {
     <>
       {videos.map((item, index) => {
         return (
-          <div className="review_card">
-            <img src={item.path} alt="" />
+          <div
+            className="review_card w-1/4 rounded-xl overflow-hidden mt-10"
+            key={index}
+          >
+            <img src={item.path} alt="" className="w-full" />
           </div>
         );
       })}

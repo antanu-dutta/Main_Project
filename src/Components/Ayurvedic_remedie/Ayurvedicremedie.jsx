@@ -2,9 +2,9 @@ import "./Ayurvedicremedie.css";
 
 function Ayurvedicremedie() {
   return (
-    <div className="ayurvedicremedie">
+    <div className="ayurvedicremedie p-4 pb-0 bg-primary rounded-t-[40px] relative z-0">
       <div className="container">
-        <div className="ayurvedic_remedie_wrapper ayurvedic_remedies_wrap">
+        <div>
           <div className="flex align-content-center justify-center gap-6">
             <div className="w-1/2">
               <h2 className="text-[40px] font-medium text-white leading-[48px] mt-3">

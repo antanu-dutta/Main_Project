@@ -9,14 +9,14 @@
   background-color: #f2f7e3;
 }
 
-.quick_category_wrap {
+/* .quick_category_wrap {
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   gap: 0;
-}
+} */
 .quick_category_wrap a {
   width: 12%;
   padding: 16px;
